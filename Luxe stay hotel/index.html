@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeStay Hotel and Resturant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!--  this is for Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <h1>LuxeStay</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-menu">=
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="booking-btn"><a href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--  This is Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to LuxeStay Hotel & Restaurant</h1>
+      <h2>Experience Luxury & Comfort</h2>
+      <p>Discover the perfect balance of comfort, convenience, and professional service</p>
+      <a href="#booking" class="btn btn-primary">Book Your Stay</a>
+    </div>
+  </section>
+
+  <!--  THis is Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-item">
+          <i class="fas fa-wifi"></i>
+          <h3>Free Wi-Fi</h3>
+          <p>High-speed internet throughout the property</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-utensils"></i>
+          <h3>Restaurant</h3>
+          <p>Fine dining experience with diverse cuisine</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-spa"></i>
+          <h3>Spa Services</h3>
+          <p>Relaxing treatments and wellness packages</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Fitness Center</h3>
+          <p>Modern equipment and personal trainers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  THis is Rooms Section -->
+  <section class="rooms" id="rooms">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Rooms</h2>
+        <p>Choose from our selection of comfortable and luxurious accommodations</p>
+      </div>
+      <div class="room-grid">
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Standard Room">
+            <div class="room-price">9999<span>/night</span></div>
+          </div>
+          <div class="room-details">
+            <h3>Standard Room</h3>
+            <p>A cozy and comfortable room with all essential amenities.</p>
+            <ul class="room-features">
+              <li><i class="fas fa-user"></i> 2 Guests</li>
+              <li><i class="fas fa-bed"></i> 1 Queen Bed</li>
+              <li><i class="fas fa-bath"></i> Private Bathroom</li>
+              <li><i class="fas fa-tv"></i> 42" Smart TV</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Book Now</a>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Deluxe Room">
+            <div class="room-price">7999<span>/night</span></div>
+          </div>
+          <div class="room-details">
+            <h3>Deluxe Room</h3>
+            <p>Spacious accommodation with enhanced amenities and services.</p>
+            <ul class="room-features">
+              <li><i class="fas fa-users"></i> 3 Guests</li>
+              <li><i class="fas fa-bed"></i> 1 King Bed</li>
+              <li><i class="fas fa-bath"></i> Luxury Bathroom</li>
+              <li><i class="fas fa-coffee"></i> Coffee Machine</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Book Now</a>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Executive Suite">
+            <div class="room-price">12999<span>/night</span></div>
+          </div>
+          <div class="room-details">
+            <h3>Executive Suite</h3>
+            <p>Premium suite with separate living area and exclusive benefits.</p>
+            <ul class="room-features">
+              <li><i class="fas fa-users"></i> 4 Guests</li>
+              <li><i class="fas fa-bed"></i> 1 King + Sofa Bed</li>
+              <li><i class="fas fa-hot-tub"></i> Jacuzzi</li>
+              <li><i class="fas fa-cocktail"></i> Mini Bar</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="view-more">
+        <a href="rooms.html" class="btn btn-outline">View All Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <!--  this is Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services to make your stay exceptional</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-concierge-bell"></i>
+          <h3>24/7 Room Service</h3>
+          <p>Enjoy delicious meals and beverages delivered to your room any time of day or night.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-car"></i>
+          <h3>Airport Transfer</h3>
+          <p>Convenient transportation between the airport and our hotel for a hassle-free journey.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-swimming-pool"></i>
+          <h3>Swimming Pool</h3>
+          <p>Relax and refresh in our temperature-controlled swimming pool with lounging area.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-glass-cheers"></i>
+          <h3>Event Planning</h3>
+          <p>Professional organization of conferences, weddings, and special occasions.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-business-time"></i>
+          <h3>Business Center</h3>
+          <p>Fully equipped business center with meeting rooms and technical support.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-baby"></i>
+          <h3>Childcare Services</h3>
+          <p>Professional childcare allowing parents to enjoy their time at our facilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  this is Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>Photo Gallery</h2>
+        <p>Take a visual tour of our hotel and facilities</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hotel Lobby">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Swimming Pool">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Restaurant">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hotel Exterior">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gym">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/2506990/pexels-photo-2506990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Spa">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  This is About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-img">
+          <img src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hotel Building">
+        </div>
+        <div class="about-text">
+          <div class="section-header">
+            <h2>About LuxeStay</h2>
+          </div>
+          <p>LuxeStay is a premier hotel management company dedicated to providing exceptional hospitality services to our guests. Established in 2010, we have grown to become a recognized name in the hospitality industry.</p>
+          <p>Our mission is to create memorable experiences for our guests through personalized service, comfortable accommodations, and world-class amenities. We strive to exceed expectations in every aspect of our operations.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>200+</h3>
+              <p>Rooms Available</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Customer Service</p>
+            </div>
+            <div class="stat-item">
+              <h3>98%</h3>
+              <p>Satisfied Guests</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  This is Booking Section -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="section-header">
+        <h2>Book Your Stay</h2>
+        <p>Quick and easy booking for your perfect getaway</p>
+      </div>
+      <div class="booking-form-container">
+        <form class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="check-in">Check In</label>
+              <input type="date" id="check-in" name="check-in" required>
+            </div>
+            <div class="form-group">
+              <label for="check-out">Check Out</label>
+              <input type="date" id="check-out" name="check-out" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="adults">Adults</label>
+              <select id="adults" name="adults" required>
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="children">Children</label>
+              <select id="children" name="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="room-type">Room Type</label>
+              <select id="room-type" name="room-type" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="executive">Executive Suite</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="special-requests">Special Requests</label>
+              <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any special requests or accessibility needs?"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary full-width">Check Availability</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--  this is Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for any inquiries or assistance</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>MIthakhel karak , Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+92317986358</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>salihktk@gmai.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Working Hours</h3>
+              <p>24/7 Customer Service</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="btn btn-primary full-width">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- this is Map Section -->
+  <section class="map">
+    <div class="map-container">
+      <img src="https://www.timesofpakistan.com/wp-content/uploads/2023/01/rupees-plunges-to-860x574.jpg" alt="Map Location">
+    </div>
+  </section>
+
+  <!--  this is Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>LuxeStay Hotel</h3>
+          <p>Providing exceptional hospitality services and creating memorable experiences for our guests since 2010.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates on special offers and events</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LuxeStay Hotel. All Rights Reserved. | University Assignment</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  this is Back to Top Button -->
+  <a href="#home" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</body>
+</html>

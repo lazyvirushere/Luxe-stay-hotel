@@ -1,0 +1,252 @@
+/* Responsive Styles */
+
+/* Large Screens (Default) */
+/* Styles already defined in style.css */
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media screen and (max-width: 1024px) {
+  /* Typography */
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  /* Features */
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Rooms */
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* About */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .about-img {
+    order: 1;
+  }
+  
+  .about-text {
+    order: 2;
+  }
+  
+  /* Contact */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+  
+  .footer-about {
+    grid-column: span 2;
+    margin-bottom: var(--space-3);
+  }
+  
+  /* Room Page Specific */
+  .full-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Screens (Mobile Devices) */
+@media screen and (max-width: 768px) {
+  /* Typography */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Header & Navigation */
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: var(--space-4);
+    transition: 0.3s ease-in-out;
+    box-shadow: var(--shadow);
+  }
+  
+  .nav-menu li {
+    margin: 0 0 var(--space-2) 0;
+  }
+  
+  .menu-toggle:checked ~ .nav-menu {
+    left: 0;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  /* Features */
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Rooms */
+  .room-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* About Stats */
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  
+
+  .form-row {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-about {
+    grid-column: 1;
+  }
+  
+  /* Room Page Specific */
+  .full-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  /* Padding & Margins */
+  section {
+    padding: var(--space-4) 0;
+  }
+  
+  /*  this is Hero Section */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.25rem;
+  }
+  
+  /*  tis is Footer */
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .subscribe-form input {
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscribe-form button {
+    border-radius: var(--border-radius-sm);
+    width: 100%;
+  }
+  
+  /* CTA */
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+}
